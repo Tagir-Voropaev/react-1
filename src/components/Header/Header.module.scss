@@ -1,0 +1,19 @@
+.box{
+      grid-area: header_;
+      background-color: #0095ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 1px -1px #000;
+      margin: 0 auto;
+      .content{
+            width: 100%;
+            max-width: 1200px;
+            .logo{
+                  width: 50px;
+                  margin-bottom: 5px;
+                  margin-left: 10px;
+            }
+      }
+}
+
