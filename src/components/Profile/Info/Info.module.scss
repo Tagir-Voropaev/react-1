@@ -1,0 +1,38 @@
+.box{
+      border: 3px solid #a5a5a5ab;
+      border-radius: 13px;
+      background-color: #fff;
+    .banner{
+          border-radius: 10px;
+          overflow: hidden;
+          width: 100%;
+          background-color: #fff;
+          img{
+            width: 100%;
+          }
+    }
+    .account{
+          display: flex;
+          padding: 20px;
+          .avatar{
+                width: 100px;
+          }
+          .infoBox{
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .name{
+                      font-size: 24px;
+                      font-weight: 600;
+                }
+                .info{
+                      ul{
+                            li{  
+                                  margin-top: 5px;
+                            }
+                      }
+                }
+          }     
+    }
+}

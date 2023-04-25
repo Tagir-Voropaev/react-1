@@ -1,12 +1,16 @@
-.item{
-    display: flex;
-    .image{
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        border: 1px solid #fff;
-    }
-    .text{
-        margin-left: 40px;
+.box{
+    margin-top: 40px;
+    .item{
+        display: flex;
+        .image{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+        }
+        .text{
+            margin-top: 10px;
+            margin-left: 40px;
+        }
     }
 }

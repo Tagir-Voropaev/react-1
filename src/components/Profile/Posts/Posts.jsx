@@ -4,14 +4,14 @@ import Post from './Post/Post'
 
 const Posts = () => {
     return (
-        <div>
+        <div className={styles.box}>
             <h3 className={styles.myposts}>My posts</h3>
             <div className={styles.newpost}>
-                New post
-                <input type="text" placeholder="Send your news" className={styles.input}/>
+                <textarea type="text" placeholder="Share your news" className={styles.textarea} wrap="soft"/>
+                <button>Send</button>
             </div>
             <div className={styles.post}>
-                <Post/>
+                <Post message="Hello!"/>
             </div>
         </div>
     )

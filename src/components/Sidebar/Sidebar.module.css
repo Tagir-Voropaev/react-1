@@ -1,1 +1,1 @@
-.box{padding:20px;grid-area:side_;background-color:#dedcff;min-height:300px}.pages .page:not(:first-of-type){margin:10px 0}.pages .page a{color:#160020;font-weight:400}
+.box{position:relative;padding:20px;grid-area:side_;border:3px solid rgba(165,165,165,0.6705882353);border-radius:13px;background-color:#fff;max-height:400px}.pages .page:not(:first-of-type){margin:10px 0}.pages .page a{color:#160020;font-weight:400}
