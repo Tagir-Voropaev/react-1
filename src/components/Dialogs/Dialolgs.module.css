@@ -1,1 +1,1 @@
-.box{position:relative;background-color:#fff;border:3px solid rgba(165,165,165,0.6705882353);border-radius:13px;min-height:300px;padding:20px}
+.box{position:relative;background-color:#fff;border:3px solid rgba(165,165,165,0.6705882353);border-radius:13px;display:-ms-grid;display:grid;grid-template-areas:"Navbar Dialog";-ms-grid-columns:300px 2fr;grid-template-columns:300px 2fr;height:90vh;max-height:1000px;min-height:500px;margin-top:60px}

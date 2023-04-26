@@ -1,0 +1,81 @@
+.box {
+    position: relative;
+    overflow: hidden;
+    grid-area: "Navbar";
+    padding-bottom: 40px;
+
+    .search{
+        position: relative;
+        display: grid;
+        padding-left: 8px;
+        grid-template-areas: "input sendMessage";
+        grid-template-columns: auto 40px;
+        height: 40px;
+        border-bottom: 2px solid #c3c3c3;
+        border-right: 2px solid #c3c3c3;
+        input{
+            grid-area: input;
+            outline: none;
+            padding-left: 10px;
+            padding-right: 5px;
+        }
+        img{
+            cursor: pointer;
+            grid-area: sendMessage;
+            margin: auto;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .dialogs {
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        border-right: 2px solid #c3c3c3;
+        height: 100%;
+        align-items: center;
+        .item {
+            padding: 10px;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            &:hover{
+                background-color: #eaeaea;
+            }
+            .avatar img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+            .content {
+                position: relative;
+                margin-left: 10px;
+                .name {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+                .message {
+                    margin-top: 5px;
+                    display: flex;
+                    width: 200px;
+                    span {
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        margin-left: 10px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        color: #898989;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,23 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
-*{
-      font-family: 'Quicksand', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+
+* {
+      font-family: 'Comfortaa','Quicksand';
+      font-weight: 400;
+      font-size: 13px;
 }
-body{
+
+body {
       background-color: #e4e4e4;
+
 }
-.AppWrapper{
+
+* {
+      scrollbar-width: 6px;
+      scrollbar-color: #454545 #d3d3d3;
+}
+
+/* Работает в Chrome, Edge и Safari */
+*::-webkit-scrollbar {
+      width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+      background: #d3d3d3;
+}
+
+*::-webkit-scrollbar-thumb {
+      background-color: #454545;
+      border-radius: 20px;
+}
+
+.AppWrapper {
       padding: 0 10px;
       display: grid;
       grid-template-areas:
-      "header_ header_" 
-      "side_ content_";
-      grid-template-rows: 60px 1fr;
-      grid-template-columns: 2fr 10fr;
-      grid-gap: 20px;
-      max-width: 1200px;
+            "side_ content_";
+      grid-template-columns: 3fr 20fr;
+      grid-gap: 10px;
+      max-width: 1300px;
+      min-width: 1000px;
       margin: 0 auto;
 }
-.content{
+
+.content {
       position: relative;
       grid-area: content_;
 }

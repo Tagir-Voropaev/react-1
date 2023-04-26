@@ -5,8 +5,9 @@
       border: 3px solid #a5a5a5ab;
       border-radius: 13px;
       background-color: #fff;
-      max-height: 400px;
-
+      height: 100%;
+      max-height: 500px;
+      margin-top: 60px;
 }
 
 .pages{
@@ -15,11 +16,15 @@
                   margin: 10px 0;
             }
             a{
+                  font-size: 13px;
                   color: #160020;
-                  font-weight: 400;
             }
-
+            .active{
+                  font-size: 15px;
+                  font-weight: 700;
+            }
       }
 
 }
+
 
