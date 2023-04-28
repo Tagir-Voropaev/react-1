@@ -17,7 +17,7 @@ const App = () => {
           <div className={styles.content}>
             {/* <Dialogs /> */}
             <Routes>
-              <Route path='/messages' element={<Dialogs/>} />
+              <Route path='/dialog/*' element={<Dialogs/>} />
               <Route path='/profile' element={<Profile/>} />
             </Routes>
           </div>

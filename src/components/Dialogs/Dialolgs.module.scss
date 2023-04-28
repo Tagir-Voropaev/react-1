@@ -1,13 +1,12 @@
+@import "../../Sources/samples.scss";
 .box {
     position: relative;
-    background-color: #fff;
-    border: 3px solid #a5a5a5ab;
+    background-color: $white;
+    border: 3px solid $border;
     border-radius: 13px;
     display: grid;
     grid-template-areas: "Navbar Dialog";
     grid-template-columns: 300px 2fr;
-    height: 90vh;
-    max-height: 1000px;
-    min-height: 500px;
-    margin-top: 60px;
+    height: 100%;
+
 }

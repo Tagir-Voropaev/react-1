@@ -13,35 +13,17 @@ body {
 
 }
 
-* {
-      scrollbar-width: 6px;
-      scrollbar-color: #454545 #d3d3d3;
-}
-
-/* Работает в Chrome, Edge и Safari */
-*::-webkit-scrollbar {
-      width: 8px;
-}
-
-*::-webkit-scrollbar-track {
-      background: #d3d3d3;
-}
-
-*::-webkit-scrollbar-thumb {
-      background-color: #454545;
-      border-radius: 20px;
-}
-
 .AppWrapper {
-      padding: 0 10px;
       display: grid;
       grid-template-areas:
             "side_ content_";
       grid-template-columns: 3fr 20fr;
       grid-gap: 10px;
       max-width: 1300px;
-      min-width: 1000px;
       margin: 0 auto;
+      padding: 0 10px;
+      padding-top: 60px;
+      height: calc(100vh - 10px);
 }
 
 .content {

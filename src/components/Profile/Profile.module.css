@@ -1,1 +1,1 @@
-.box{position:relative;margin-top:60px}
+.box{position:relative;height:100%;display:-ms-grid;display:grid;grid-area:"info" "posts"}

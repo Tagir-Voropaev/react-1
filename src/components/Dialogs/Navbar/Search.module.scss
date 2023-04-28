@@ -1,0 +1,27 @@
+@import "../../../Sources/samples.scss";
+.search {
+    position: relative;
+    display: grid;
+    grid-template-areas: "input sendMessage";
+    grid-template-columns: 17fr 3fr;
+    height: 40px;
+    border-bottom: 2px solid $border;
+    border-right: 2px solid $border;
+    border-radius: 10px 0px 0px 0px;
+    overflow: hidden;
+
+    input {
+        grid-area: input;
+        outline: none;
+        padding-right: 5px;
+        padding-left: 10px;
+    }
+
+    img {
+        cursor: pointer;
+        grid-area: sendMessage;
+        margin: auto;
+        width: 30px;
+        height: 30px;
+    }
+}
