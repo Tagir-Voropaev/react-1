@@ -1,32 +1,22 @@
 import React from "react"
 import styles from './Navbar.module.css'
+import search from './Search.module.css'
+import DialogItem from './DialogItem/DialogItem'
+
 const Navbar = () => {
     return (
         <div className={styles.box}>
-            <div className={styles.search}>
-                <input type="text" placeholder="Поиск"/>
+            <div className={search.search}>
+                <input type="text" placeholder="Поиск" />
                 <img src="https://cdn-icons-png.flaticon.com/512/6492/6492707.png" alt="" />
             </div>
             <div className={styles.dialogs}>
-                <div className={styles.item}>
-                        <div className={styles.avatar}>
-                            <img src="https://abrakadabra.fun/uploads/posts/2022-02/1644169591_2-abrakadabra-fun-p-avatarka-s-ulibkoi-3.png" alt="" />
-                        </div>
-                        <div className={styles.content}>
-                            <p className={styles.name}>Tagir Voropaev</p>
-                            <div className={styles.message}><span>You:</span><p>My message that I wrote and something else that can be written very long. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, eos?</p></div>
-                        </div>
+                <div className={styles.track}>
+                    <DialogItem name="Tagir Voropaev" id="1" lastMessage="This is my text and i say goodbuyn"/>
+                    <DialogItem name="Stanislav Orlov" id="2" lastMessage="This is my text"/>
+                    <DialogItem name="Adelina Kandaurova" id="3" lastMessage="I want play the Counter Strike GLOBAL OFFENCIVE"/>
+                    <DialogItem name="Tagir SSS" id="4" lastMessage="This is my text"/>
                 </div>
-                <div className={styles.item}>
-                        <div className={styles.avatar}>
-                            <img src="https://abrakadabra.fun/uploads/posts/2022-02/1644169591_2-abrakadabra-fun-p-avatarka-s-ulibkoi-3.png" alt="" />
-                        </div>
-                        <div className={styles.content}>
-                            <p className={styles.name}>Tagir Voropaev</p>
-                            <div className={styles.message}><span>You:</span><p>My message that I wrote and something else that can be written very long. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, eos?</p></div>
-                        </div>
-                </div>
-                
             </div>
         </div>
     )
